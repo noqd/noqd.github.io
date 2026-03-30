@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CORS Test</title>
+</head>
+<body>
+  <h2>Chai CORS Test</h2>
+  <button onclick="test()">Run Test</button>
+
+  <pre id="output"></pre>
+
+  <script>
+    async function test() {
+      const out = document.getElementById("output");
+      out.textContent = "Running...\n";
+
+      try {
+        const res = await fetch("https://web.chai-research.com/chat/test", {
+          method: "POST",
+          headers: {
+            "Content-Type": "text/plain;charset=UTF-8",
+            "Accept": "text/x-component"
+          },
+          body: JSON.stringify(["ping"])
+        });
+
+        out.textContent += "Status: " + res.status + "\n";
+
+        const text = await res.text();
+        out.textContent += "\nResponse:\n" + text;
+
+      } catch (err) {
+        out.textContent += "\nERROR:\n" + err;
+      }
+    }
+  </script>
+</body>
+</html>
