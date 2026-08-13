@@ -1,38 +1,6 @@
 (function () {
   var projects = [
-    {
-      name: "Discord Bot",
-      description: "A Discord bot built with Python that handles moderation, commands, and server utilities.",
-      tech: ["Python", "Discord API", "SQLite"],
-      links: [
-        { label: "Source", href: "[GITHUB URL]" }
-      ]
-    },
-    {
-      name: "FastAPI Service",
-      description: "A REST API built with FastAPI that exposes [PROJECT DESCRIPTION]. Includes [AUTH/FEATURE] and [FEATURE].",
-      tech: ["Python", "FastAPI", "PostgreSQL"],
-      links: [
-        { label: "Source", href: "[GITHUB URL]" },
-        { label: "Live demo", href: "[LIVE URL]" }
-      ]
-    },
-    {
-      name: "Node.js App",
-      description: "A Node.js application that [PROJECT DESCRIPTION]. Built with Express and [DATABASE/TECH].",
-      tech: ["JavaScript", "Node.js", "Express"],
-      links: [
-        { label: "Source", href: "[GITHUB URL]" }
-      ]
-    },
-    {
-      name: "Automation Tool",
-      description: "A Python automation tool that [PROJECT DESCRIPTION]. Runs on a [SCHEDULE] to [WHAT IT DOES].",
-      tech: ["Python", "SQLite", "[LIBRARY]"],
-      links: [
-        { label: "Source", href: "[GITHUB URL]" }
-      ]
-    }
+
   ];
 
   var stack = [
